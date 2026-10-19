@@ -1,0 +1,7 @@
+{
+  "name": "Computer Programming Bluezone",
+  "description": "Hệ thống ôn thi Tin học THPT - Bài 1-25 Tin 10 & 11 KNTT, C++, hỗ trợ 8 phông chữ, đa ngôn ngữ Việt - Anh - Trung (ZH), tạo câu hỏi luyện tập 4 dạng cơ bản và lưu trữ LocalStorage.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #f8fafc;
+    color: #0f172a;
+  }
+}
+
+/* 8 Selected Font Families requested by User with full UTF-8 Vietnamese diacritics support */
+.font-family-python {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+}
+
+.font-family-arial {
+  font-family: 'Arial', 'Arimo', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif !important;
+}
+
+.font-family-calibri {
+  font-family: 'Calibri', 'Carlito', 'Candara', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+.font-family-times {
+  font-family: 'Times New Roman', 'Tinos', Times, 'Liberation Serif', Georgia, serif !important;
+}
+
+.font-family-segoe {
+  font-family: 'Segoe UI', 'Segoe UI Variable', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, Roboto, sans-serif !important;
+}
+
+.font-family-roboto {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+.font-family-fira {
+  font-family: 'Fira Code', 'JetBrains Mono', monospace !important;
+}
+
+.font-family-lora {
+  font-family: 'Lora', 'Tinos', 'Times New Roman', Georgia, serif !important;
+}
+
+@keyframes terminalBlink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.animate-cursor-blink {
+  animation: terminalBlink 0.9s infinite;
+}
+
+/* 4 Themes Background with Real Wallpapers & 50% Frosted Glass support */
+.bg-wallpaper-nature {
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1920&auto=format&fit=crop&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bg-wallpaper-greenery {
+  background-image: url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=1920&auto=format&fit=crop&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bg-wallpaper-technology {
+  background-image: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1920&auto=format&fit=crop&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bg-wallpaper-lecturer {
+  background-image: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1920&auto=format&fit=crop&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Glassmorphism 50% opacity backdrop blur panels */
+.glass-panel-50 {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(226, 232, 240, 0.6);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+  background: #60a5fa;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
+
+/* Dark mode custom scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: rgba(30, 41, 59, 0.6);
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #60a5fa;
+}
